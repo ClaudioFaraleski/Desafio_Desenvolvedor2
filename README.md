@@ -1,69 +1,72 @@
-# README.md
+# Desafio Desenvolvedor
 
-# Desafio de Programação
+Este repositório contém as soluções para um conjunto de desafios de programação implementados em Python.
 
-Este projeto contém soluções para uma série de desafios de programação. Cada desafio é implementado em uma classe separada, e o código está organizado em um diretório de forma a facilitar a navegação e a execução.
-
-## Estrutura do Projeto
+## 🚀 Estrutura do Projeto
 
 ```
-coding-challenges
-├── src
-│   ├── Questao_1
-│   │   └── SumCalculator.cs
-│   ├── Questao_2
-│   │   └── FibonacciChecker.cs
-│   ├── Questao_3
-│   │   ├── BillingAnalyzer.cs
-│   │   └── data
-│   │       └── billing.json
-│   ├── Questao_4
-│   │   └── DistributorPercentage.cs
-│   ├── Questao_5
-│   │   └── StringInverter.cs
-│   └── Program.cs
-├── tests
-│   ├── Questao1Tests.cs
-│   ├── Questao2Tests.cs
-│   ├── Questao3Tests.cs
-│   ├── Questao4Tests.cs
-│   └── Questao5Tests.cs
-├── coding-challenges.csproj
-└── README.md
+Desafio_Desenvolvedor2/
+├── dados/                          # Arquivos de dados
+│   ├── faturamento.json           # Dados de faturamento diário
+│   └── estados.json               # Dados de faturamento por estado
+├── desafios/                      # Implementações dos desafios
+│   ├── desafio1.py               # Soma de sequência
+│   ├── desafio2.py               # Verificação Fibonacci
+│   ├── desafio3.py               # Análise de faturamento
+│   ├── desafio4.py               # Percentual por estado
+│   └── desafio5.py               # Inversão de string
+└── README.md                      # Documentação do projeto
 ```
 
-## Instruções para Execução
+## 📋 Desafios Implementados
 
-1. **Clone o repositório:**
-   ```bash
-   git clone <URL_DO_REPOSITORIO>
-   cd coding-challenges
-   ```
+### 1. Soma de Sequência
+- Calcula a soma de uma sequência numérica conforme algoritmo fornecido
+- Arquivo: `desafios/desafio1.py`
+- Resultado esperado: 91
 
-2. **Restaure as dependências:**
-   ```bash
-   dotnet restore
-   ```
+### 2. Sequência de Fibonacci
+- Verifica se um número pertence à sequência de Fibonacci
+- Arquivo: `desafios/desafio2.py`
+- Exemplo de sequência: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...
 
-3. **Execute o projeto:**
-   ```bash
-   dotnet run
-   ```
+### 3. Análise de Faturamento
+- Calcula estatísticas de faturamento diário usando dados do JSON
+- Arquivo: `desafios/desafio3.py`
+- Calcula: menor valor, maior valor e dias acima da média
 
-4. **Execute os testes:**
-   ```bash
-   dotnet test
-   ```
+### 4. Percentual por Estado
+- Calcula percentual de representação de cada estado no faturamento total
+- Arquivo: `desafios/desafio4.py`
+- Estados: SP, RJ, MG, ES e Outros
 
-## Descrição dos Desafios
+### 5. Inversão de String
+- Inverte caracteres de uma string sem usar funções prontas
+- Arquivo: `desafios/desafio5.py`
+- Implementação manual do algoritmo de inversão
 
-1. **Soma de Números:** Implementa a lógica para calcular a soma dos números de 1 até um índice definido.
-2. **Verificação de Fibonacci:** Verifica se um número pertence à sequência de Fibonacci.
-3. **Análise de Faturamento:** Calcula o menor e o maior faturamento diário, além de contar os dias com faturamento acima da média mensal.
-4. **Cálculo de Percentual:** Calcula o percentual de representação de cada estado no faturamento total da distribuidora.
-5. **Inversão de String:** Inverte os caracteres de uma string sem usar funções prontas.
+## ⚙️ Como Executar
 
-## Contribuições
+```bash
+# Executar cada desafio individualmente
+python desafios/desafio1.py
+python desafios/desafio2.py
+python desafios/desafio3.py
+python desafios/desafio4.py
+python desafios/desafio5.py
+```
 
-Sinta-se à vontade para contribuir com melhorias ou correções. Para isso, crie um fork do repositório, faça suas alterações e envie um pull request.
+## 📊 Dados de Entrada
 
+Os arquivos de dados estão localizados na pasta `dados/`:
+- `faturamento.json`: Dados de faturamento diário
+- `estados.json`: Dados de faturamento por estado
+
+## 👤 Autor
+
+[Claudio Faraleski Junior]
+
+
+## 🤝 Contribuições
+
+Contribuições são sempre bem-vindas! Por favor, leia o [guia de contribuição](CONTRIBUTING.md) primeiro.
